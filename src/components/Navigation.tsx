@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import ButtonTitle from './ButtonTitle';
 import {
@@ -8,6 +10,9 @@ import {
 import { NavigationProps } from '@/utils/types';
 
 export default function Navigation({ className }: NavigationProps = {}) {
+  const handleLogin = () => {
+    alert('Okay, done login');
+  };
   return (
     <nav
       className={`absolute inset-0 mt-25 w-full h-100 flex items-center justify-between px-100 md:px-50 sm:px-25 ${
@@ -21,7 +26,7 @@ export default function Navigation({ className }: NavigationProps = {}) {
         <ButtonTitle title="Tentang" icon={<ArrowRightIcon />} />
         <ButtonTitle title="Harga" icon={<ArrowRightIcon />} />
         <ButtonTitle title="Kontak" icon={<ArrowRightIcon />} />
-        <ButtonTitle title="Masuk" icon={<UserIcon />} />
+        <ButtonTitle title="Masuk" icon={<UserIcon />} onClick={handleLogin} />
       </div>
       <div className="hidden md:flex items-center justify-center text-dark rounded-full overflow-hidden w-50 h-50 bg-[#9b79e8] text-white p-5 shrink-0 ">
         <Bars3Icon className="w-30 h-30" />
