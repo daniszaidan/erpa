@@ -32,7 +32,7 @@ const ButtonTitle = forwardRef<HTMLButtonElement, ButtonTitle>(
       >
         <span
           className={cn(
-            'transition-all duration-300 flex-none text-[17.5px] sm:text-[15px] font-semibold relative z-1',
+            'transition-all duration-300 flex-none text-[17.5px] sm:text-[15px] font-semibold relative z-1 line-clamp-1',
             isPrimary && 'text-black',
             titleClassName
           )}
@@ -42,7 +42,7 @@ const ButtonTitle = forwardRef<HTMLButtonElement, ButtonTitle>(
 
         <div
           className={cn(
-            'transition-all duration-300 flex items-center justify-center text-dark rounded-full overflow-hidden w-30 h-30 bg-[#9b79e8] text-white p-5'
+            'transition-all duration-300 flex items-center justify-center text-dark rounded-full overflow-hidden w-30 h-30 bg-[#9b79e8] text-white p-5 shrink-0'
           )}
         >
           {icon}

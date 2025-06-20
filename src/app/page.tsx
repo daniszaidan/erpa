@@ -37,8 +37,8 @@ export default function Home() {
       </section>
 
       <div className="p-100 md:p-50 sm:p-30">
-        <div className="max-w-7xl mx-auto">
-          <section className="w-full min-h-dvh">
+        <div className="max-w-7xl mx-auto flex flex-col gap-[150px] sm:gap-100">
+          <section className="w-full">
             <div className="grid gap-25 mb-50">
               <h3 className="text-[40px] sm:text-[30px] font-[600]">
                 Tentang Erpa
@@ -56,7 +56,7 @@ export default function Home() {
                 alt="bg about"
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 w-full h-full p-30 flex items-end justify-end gap-25">
+              <div className="absolute inset-0 w-full h-full p-30 flex sm:flex-col flex-wrap items-end justify-end gap-25">
                 <ButtonTitle title="ERP" icon={<HashtagIcon />} />
                 <ButtonTitle title="Manajemen" icon={<HashtagIcon />} />
                 <ButtonTitle title="Keuntungan" icon={<HashtagIcon />} />
@@ -64,7 +64,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="w-full min-h-dvh">
+          <section className="w-full">
             <div className="grid gap-25 mb-50">
               <h3 className="text-[40px] sm:text-[30px] font-[600]">Harga</h3>
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
                 <p className="text-[25px] sm:text-[20px] font-[400] ">
                   Jangan ragu untuk menghubungi kami
                 </p>
-                <div className="flex gap-15 items-start">
+                <div className="flex flex-wrap gap-15 items-start">
                   <Link
                     href="https://wa.me/6281234567890"
                     className="text-[20px] font-[600]"
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
           </section>
 
-          <footer className="flex items-center justify-between mt-100 text-[20px] font-bold text-black/50">
+          <footer className="flex flex-wrap gap-15 items-center justify-between mt-100 text-[20px] font-bold text-black/50">
             <h6>© 2025 Erpa</h6>
             <span>
               Design & Develop by{' '}
